@@ -1,0 +1,162 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #020107 0%, #201b46 100%);
+}
+
+.text {
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin: -10px -75px 0 0;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.stars {
+    z-index: 10;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: /* Large number of star positions would go here */;
+    animation: animStar 100s linear infinite;
+}
+
+    .stars:after {
+        content: " ";
+        top: -600px;
+        width: 1px;
+        height: 1px;
+        border-radius: 50%;
+        position: absolute;
+        background: transparent;
+        box-shadow: /* Same star positions as above */;
+    }
+
+.stars1 {
+    z-index: 10;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: /* Medium number of star positions would go here */;
+    animation: animStar 125s linear infinite;
+}
+
+    .stars1:after {
+        content: " ";
+        top: -600px;
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        position: absolute;
+        background: transparent;
+        box-shadow: /* Same star positions as above */;
+    }
+
+.stars2 {
+    z-index: 10;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: /* Small number of star positions would go here */;
+    animation: animStar 175s linear infinite;
+}
+
+    .stars2:after {
+        content: " ";
+        top: -600px;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        position: absolute;
+        background: transparent;
+        box-shadow: /* Same star positions as above */;
+    }
+
+.shooting-stars {
+    z-index: 10;
+    width: 5px;
+    height: 85px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1));
+    animation: animShootingStar 10s linear infinite;
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-2560px) translateX(-2560px);
+    }
+}
+
+@keyframes animShootingStar {
+    from {
+        transform: translateY(0px) translateX(0px) rotate(-45deg);
+        opacity: 1;
+        height: 5px;
+    }
+
+    to {
+        transform: translateY(-2560px) translateX(-2560px) rotate(-45deg);
+        opacity: 1;
+        height: 800px;
+    }
+}
+    /* Panel Transparente */
+
+
+    #btn4 {
+        border: 0 solid;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+        outline: 1px solid;
+        outline-color: rgba(255, 255, 255, .5);
+        outline-offset: 0px;
+        text-shadow: none;
+        transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: 1px solid rgba(255, 255, 255, 0.3); /* Borde semitransparente */
+        border-radius: 10px;
+        cursor: pointer;
+        backdrop-filter: blur(10px); /* Efecto de difuminado */
+        transition: all 0.3s ease-in-out;
+    }
+
+    #btn4:hover {
+        border: 1px solid;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+        /* outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px; */ /*Efectos de cuadro saliendo*/
+        text-shadow: 1px 1px 2px #427388;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.5);
+    }
