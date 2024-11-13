@@ -26,13 +26,25 @@ html, body {
     height: 100%;
 }
 
-.text {
+.subTitle {
     color: #FFF;
     position: absolute;
     top: 12%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 44px;
+    font-size: 45px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.title {
+    color: #FFF;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
     font-family: Arial, sans-serif;
     font-weight: bold;
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
