@@ -26,10 +26,11 @@ html, body {
     height: 100%;
 }
 
+/* Títulos */
 .subTitle {
     color: #FFF;
     position: absolute;
-    top: 12%;
+    top: 8%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 45px;
@@ -41,7 +42,7 @@ html, body {
 .title {
     color: #FFF;
     position: absolute;
-    top: 17%;
+    top: 13%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 25px;
@@ -50,6 +51,70 @@ html, body {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
+/* Paneles */
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 10vh;
+}
+
+.panel-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 600px;
+    position: relative;
+}
+
+.glass-panel {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.05) 100% );
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 3vh;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), inset 0 0 30px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+    .glass-panel::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, transparent 100% );
+        border-radius: 3vh;
+    }
+
+    .glass-panel:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15), inset 0 0 40px rgba(255, 255, 255, 0.25), 0 0 30px rgba(255, 255, 255, 0.2);
+    }
+
+.panel-left {
+    width: 200px;
+    height: 60vh;
+}
+
+.panel-right {
+    width: 400px;
+    height: 60vh;
+}
+
+.panel-text {
+    margin-top: 5vh;
+    color: rgb(186, 183, 204);
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estrellas */
 .stars-layer {
     position: absolute;
     top: 0;
@@ -87,6 +152,7 @@ html, body {
     animation-duration: var(--largeStarScrollSpeed);
 }
 
+/* Estrellas fugaces */
 .shooting-stars {
     position: absolute;
     top: 0;
