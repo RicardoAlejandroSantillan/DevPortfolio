@@ -11,12 +11,83 @@
     <div class="center-screen">
         <div class="panel-container">
             <div class="text-center glass-panel panel-left">
-                <p class="panel-text">Panel izq</p>
+                <div class="profile-section">
+                    <!-- Espacio reservado para el contenido superior -->
+                </div>
+                <nav class="nav-menu">
+                    <button class="nav-button active" data-section="introduction">Introduction</button>
+                    <button class="nav-button" data-section="skills">Skills</button>
+                    <button class="nav-button" data-section="projects-experience">Projects & Experience</button>
+                    <button class="nav-button" data-section="education">Education</button>
+                    <button class="nav-button" data-section="articles">Blog/Articles</button>
+                    <button class="nav-button" data-section="testimonials">Testimonials</button>
+                </nav>
             </div>
-
+            
             <div class="text-center glass-panel panel-right">
-                <p class="panel-text">Panel Der</p>
+                <div id="introduction" class="content-section active">
+                    <partial name="_Introduction" />
+                </div>
+                <div id="skills" class="content-section">
+                    <partial name="_Skills" />
+                </div>
+                <div id="projects-experience" class="content-section">
+                    <partial name="_ProjectsExperience" />
+                </div>
+                <div id="education" class="content-section">
+                    <partial name="_Education" />
+                </div>
+                <div id="articles" class="content-section">
+                    <partial name="_Articles" />
+                </div>
+                <div id="testimonials" class="content-section">
+                    <!-- Contenido futuro para testimonials -->
+                    <h3>Coming Soon...</h3>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Obtener todos los botones y secciones
+            const buttons = document.querySelectorAll('.nav-button');
+            const sections = document.querySelectorAll('.content-section');
+
+            // Función para mostrar una sección específica
+            function showSection(sectionId) {
+                // Ocultar todas las secciones
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                // Remover active de todos los botones
+                buttons.forEach(button => {
+                    button.classList.remove('active');
+                });
+
+                // Mostrar la sección seleccionada
+                const selectedSection = document.getElementById(sectionId);
+                if (selectedSection) {
+                    selectedSection.classList.add('active');
+                }
+
+                // Activar el botón correspondiente
+                const selectedButton = document.querySelector(`[data-section="${sectionId}"]`);
+                if (selectedButton) {
+                    selectedButton.classList.add('active');
+                }
+            }
+
+            // Agregar event listeners a los botones
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const sectionId = this.getAttribute('data-section');
+                    showSection(sectionId);
+                });
+            });
+        });
+    </script>
+}
