@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7K/S+GyKRT91N/MrKYlowD7RQJLGJJFocBOVkglllXc=",
+  "Hash": "XxA/YretCgxf9qWYUpA6LQ1cTrjMdQn2QdaW14fvu94=",
   "Source": "devPortfolio",
   "BasePath": "_content/devPortfolio",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\devPortfolio.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\css\\base.css",
+      "SourceId": "devPortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\",
+      "BasePath": "_content/devPortfolio",
+      "RelativePath": "css/base.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\base.css"
     },
     {
       "Identity": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\css\\site.css",

@@ -1,0 +1,48 @@
+﻿.content-section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 2rem;
+    height: 100%;
+    overflow-y: auto;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+    .content-section.active {
+        display: block;
+        opacity: 1;
+    }
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.hard-skills,
+.soft-skills {
+    width: 100%;
+}
+
+.skill-group {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+    .skill-group h4 {
+        color: #ffffff;
+        margin-bottom: 0.8rem;
+        font-size: 1.1em;
+        letter-spacing: 0.5px;
+    }
+
+.skill-level h5 {
+    color: #add8e6;
+    margin: 1rem 0 0.5rem;
+    font-size: 1em;
+}
