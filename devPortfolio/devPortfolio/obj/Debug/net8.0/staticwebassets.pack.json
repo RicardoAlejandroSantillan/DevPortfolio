@@ -9,12 +9,108 @@
       "PackagePath": "staticwebassets\\css\\base.css"
     },
     {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\css\\components.css",
+      "PackagePath": "staticwebassets\\css\\components.css"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\css\\layout.css",
+      "PackagePath": "staticwebassets\\css\\layout.css"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\css\\navigation.css",
+      "PackagePath": "staticwebassets\\css\\navigation.css"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\css\\projects-slider.css",
+      "PackagePath": "staticwebassets\\css\\projects-slider.css"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\css\\sections.css",
+      "PackagePath": "staticwebassets\\css\\sections.css"
+    },
+    {
       "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\css\\social-links.css",
+      "PackagePath": "staticwebassets\\css\\social-links.css"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\css\\stars.css",
+      "PackagePath": "staticwebassets\\css\\stars.css"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\css\\typography.css",
+      "PackagePath": "staticwebassets\\css\\typography.css"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\css\\utilities.css",
+      "PackagePath": "staticwebassets\\css\\utilities.css"
+    },
+    {
       "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\projects\\BookShelf\\cover.webp",
+      "PackagePath": "staticwebassets\\images\\projects\\BookShelf\\cover.webp"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\projects\\BookShelf\\page.webp",
+      "PackagePath": "staticwebassets\\images\\projects\\BookShelf\\page.webp"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\projects\\Daikin\\cover.webp",
+      "PackagePath": "staticwebassets\\images\\projects\\Daikin\\cover.webp"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\projects\\Daikin\\overimeRequest page.webp",
+      "PackagePath": "staticwebassets\\images\\projects\\Daikin\\overimeRequest page.webp"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\projects\\DevPortfolio\\cover.webp",
+      "PackagePath": "staticwebassets\\images\\projects\\DevPortfolio\\cover.webp"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\projects\\proSalud\\cover.webp",
+      "PackagePath": "staticwebassets\\images\\projects\\proSalud\\cover.webp"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\projects\\proSalud\\page.webp",
+      "PackagePath": "staticwebassets\\images\\projects\\proSalud\\page.webp"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\projects\\ticketNow\\cover.webp",
+      "PackagePath": "staticwebassets\\images\\projects\\ticketNow\\cover.webp"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\social media\\github.png",
+      "PackagePath": "staticwebassets\\images\\social media\\github.png"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\social media\\gmail.png",
+      "PackagePath": "staticwebassets\\images\\social media\\gmail.png"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\social media\\linkedin.png",
+      "PackagePath": "staticwebassets\\images\\social media\\linkedin.png"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\social media\\twitterX.png",
+      "PackagePath": "staticwebassets\\images\\social media\\twitterX.png"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\social media\\whatsapp.png",
+      "PackagePath": "staticwebassets\\images\\social media\\whatsapp.png"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\js\\projects-slider.js",
+      "PackagePath": "staticwebassets\\js\\projects-slider.js"
     },
     {
       "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\js\\site.js",

@@ -1,0 +1,99 @@
+﻿.social-links {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 15px;
+    z-index: 1000;
+    text-align: center; /* Asegura que el texto también esté centrado */
+}
+
+    /* Título "Contact Me" */
+    .social-links::before {
+        content: "Contact Me";
+        display: block; /* Asegura que ocupe todo el ancho disponible */
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.1em;
+        text-align: center;
+        margin-bottom: 10px;
+        font-family: Arial, sans-serif;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+        white-space: nowrap;
+    }
+
+.social-link {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+    .social-link:hover {
+        transform: scale(1.1);
+        background: rgba(255, 255, 255, 0.2);
+        border-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+
+    .social-link img {
+        width: 25px;
+        height: 25px;
+        filter: brightness(0) invert(1);
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+    }
+
+    .social-link:hover img {
+        opacity: 1;
+    }
+
+    /* Tooltips para los nombres de redes sociales */
+    .social-link::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        right: 60px;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.9em;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .social-link:hover::after {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-5px);
+    }
+
+@media (max-width: 768px) {
+    .social-links {
+        right: 10px;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
+    }
+
+        .social-link img {
+            width: 22px;
+            height: 22px;
+        }
+}
