@@ -56,8 +56,13 @@ function initializeProjectSlider() {
 
     let currentIndex = 0;
 
-    function updateCards() {
-        projectCards.forEach((card, index) => {
+    function updateCards(filterType = 'all') {
+        let visibleCards = Array.from(projectCards).filter(card => {
+            if (filterType === 'all') return true;
+            return card.dataset.type === filterType;
+        });
+
+        visibleCards.forEach((card, index) => {
             if (index === currentIndex) {
                 card.classList.add('active');
                 card.classList.remove('prev', 'next', 'hide', 'new-next');
@@ -87,16 +92,23 @@ function initializeProjectSlider() {
     }
 
     function nextSlide() {
-        if (currentIndex < projectCards.length - 1) {
+        const currentFilter = document.querySelector('.filter-button.active').dataset.filter;
+        const visibleCards = Array.from(projectCards).filter(card => {
+            if (currentFilter === 'all') return true;
+            return card.dataset.type === currentFilter;
+        });
+
+        if (currentIndex < visibleCards.length - 1) {
             currentIndex++;
-            updateCards();
+            updateCards(currentFilter);
         }
     }
 
     function prevSlide() {
         if (currentIndex > 0) {
             currentIndex--;
-            updateCards();
+            const currentFilter = document.querySelector('.filter-button.active').dataset.filter;
+            updateCards(currentFilter);
         }
     }
 
@@ -108,6 +120,9 @@ function initializeProjectSlider() {
             filterButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
 
+            currentIndex = 0; // Reset index when filtering
+
+            // Mostrar/ocultar tarjetas según el filtro
             projectCards.forEach(card => {
                 if (filterType === 'all' || card.dataset.type === filterType) {
                     card.classList.remove('filtered-out');
@@ -116,9 +131,7 @@ function initializeProjectSlider() {
                 }
             });
 
-            // Reset to first visible card
-            currentIndex = 0;
-            updateCards();
+            updateCards(filterType);
         });
     });
 
@@ -163,3 +176,119 @@ document.addEventListener('contentChanged', initializeProjectSlider);
 
 // Handle window resize
 window.addEventListener('resize', initializeProjectSlider);
+
+
+//function initializeProjectSlider() {
+//    const projectCards = document.querySelectorAll('.project-card');
+//    const projectDetails = document.querySelectorAll('.project-details');
+//    const filterButtons = document.querySelectorAll('.filter-button');
+
+//    let currentIndex = 0;
+
+//    function updateCards() {
+//        projectCards.forEach((card, index) => {
+//            if (index === currentIndex) {
+//                card.classList.add('active');
+//                card.classList.remove('prev', 'next', 'hide', 'new-next');
+//            } else if (index === currentIndex - 1) {
+//                card.classList.add('prev');
+//                card.classList.remove('active', 'next', 'hide', 'new-next');
+//            } else if (index === currentIndex + 1) {
+//                card.classList.add('next');
+//                card.classList.remove('active', 'prev', 'hide', 'new-next');
+//            } else if (index < currentIndex - 1) {
+//                card.classList.add('hide');
+//                card.classList.remove('active', 'prev', 'next', 'new-next');
+//            } else {
+//                card.classList.add('new-next');
+//                card.classList.remove('active', 'prev', 'next', 'hide');
+//            }
+//        });
+
+//        // Update project details
+//        projectDetails.forEach((detail, index) => {
+//            if (index === currentIndex) {
+//                detail.classList.add('active');
+//            } else {
+//                detail.classList.remove('active');
+//            }
+//        });
+//    }
+
+//    function nextSlide() {
+//        if (currentIndex < projectCards.length - 1) {
+//            currentIndex++;
+//            updateCards();
+//        }
+//    }
+
+//    function prevSlide() {
+//        if (currentIndex > 0) {
+//            currentIndex--;
+//            updateCards();
+//        }
+//    }
+
+//    // Filter functionality
+//    filterButtons.forEach(button => {
+//        button.addEventListener('click', () => {
+//            const filterType = button.dataset.filter;
+
+//            filterButtons.forEach(btn => btn.classList.remove('active'));
+//            button.classList.add('active');
+
+//            projectCards.forEach(card => {
+//                if (filterType === 'all' || card.dataset.type === filterType) {
+//                    card.classList.remove('filtered-out');
+//                } else {
+//                    card.classList.add('filtered-out');
+//                }
+//            });
+
+//            // Reset to first visible card
+//            currentIndex = 0;
+//            updateCards();
+//        });
+//    });
+
+//    // Click handlers
+//    projectCards.forEach((card, index) => {
+//        card.addEventListener('click', () => {
+//            if (card.classList.contains('prev')) {
+//                prevSlide();
+//            } else if (card.classList.contains('next')) {
+//                nextSlide();
+//            }
+//        });
+//    });
+
+//    // Touch handlers
+//    let touchstartX = 0;
+//    let touchendX = 0;
+
+//    document.addEventListener('touchstart', e => {
+//        touchstartX = e.changedTouches[0].screenX;
+//    });
+
+//    document.addEventListener('touchend', e => {
+//        touchendX = e.changedTouches[0].screenX;
+//        handleSwipe();
+//    });
+
+//    function handleSwipe() {
+//        if (touchendX < touchstartX) nextSlide();
+//        if (touchendX > touchstartX) prevSlide();
+//    }
+
+//    // Initial setup
+//    updateCards();
+//}
+
+//// Initialize when DOM is ready
+//document.addEventListener('DOMContentLoaded', initializeProjectSlider);
+
+//// Reinitialize when content changes
+//document.addEventListener('contentChanged', initializeProjectSlider);
+
+//// Handle window resize
+//window.addEventListener('resize', initializeProjectSlider);

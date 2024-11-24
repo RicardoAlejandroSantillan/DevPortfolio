@@ -29,3 +29,34 @@ C:\Users\PerezRA\Documents\1 - Personal\Mia Proyectos\MVC devPortfolio\DevPortfo
 C:\Users\PerezRA\Documents\1 - Personal\Mia Proyectos\MVC devPortfolio\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\devPortfolio.pdb
 C:\Users\PerezRA\Documents\1 - Personal\Mia Proyectos\MVC devPortfolio\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\devPortfolio.genruntimeconfig.cache
 C:\Users\PerezRA\Documents\1 - Personal\Mia Proyectos\MVC devPortfolio\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\ref\devPortfolio.dll
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\bin\Debug\net8.0\appsettings.json
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\bin\Debug\net8.0\devPortfolio.staticwebassets.runtime.json
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\bin\Debug\net8.0\devPortfolio.exe
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\bin\Debug\net8.0\devPortfolio.deps.json
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\bin\Debug\net8.0\devPortfolio.runtimeconfig.json
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\bin\Debug\net8.0\devPortfolio.dll
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\bin\Debug\net8.0\devPortfolio.pdb
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\devPortfolio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\devPortfolio.AssemblyInfoInputs.cache
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\devPortfolio.AssemblyInfo.cs
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\devPortfolio.csproj.CoreCompileInputs.cache
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\devPortfolio.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\devPortfolio.RazorAssemblyInfo.cache
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\devPortfolio.RazorAssemblyInfo.cs
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\devPortfolio.sourcelink.json
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\staticwebassets\msbuild.devPortfolio.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\staticwebassets\msbuild.build.devPortfolio.props
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.devPortfolio.props
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.devPortfolio.props
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\scopedcss\bundle\devPortfolio.styles.css
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\scopedcss\projectbundle\devPortfolio.bundle.scp.css
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\devPortfolio.dll
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\refint\devPortfolio.dll
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\devPortfolio.pdb
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\devPortfolio.genruntimeconfig.cache
+C:\Users\aleja\OneDrive\Documentos\1 - Proyectos\Web\DevPortfolio\devPortfolio\devPortfolio\obj\Debug\net8.0\ref\devPortfolio.dll

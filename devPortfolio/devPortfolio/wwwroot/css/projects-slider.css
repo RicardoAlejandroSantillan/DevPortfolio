@@ -1,263 +1,4 @@
-﻿/*.slider--projects {
-    position: relative;
-    max-width: 100%;
-    opacity: 1;
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.slider--projects__container {
-    position: relative;
-    overflow: hidden;
-    width: 700px;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.projects-list {
-    position: relative;
-    backface-visibility: hidden;
-    display: flex;
-    transition: transform 0.5s cubic-bezier(0.445, 0.050, 0.550, 0.950);
-    margin: 0;
-    padding: 0;
-    gap: 60px;
-}
-
-    .projects-list li {
-        flex: 0 0 250px;
-        max-width: 250px;
-        text-align: center;
-        transform: translateX(125px);
-    }
-
-.project-card {
-    position: relative;
-    cursor: pointer;
-    margin: 0.5em;
-    opacity: 0.5;
-    backface-visibility: hidden;
-    transition: all 450ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
-    transform: scale(0.8);
-}
-
-    .project-card:hover {
-        opacity: 0.8;
-        transform: scale(0.85);
-    }
-
-    .project-card.active {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-.project-badge {
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
-    padding: 5px 15px;
-    border-radius: 15px;
-    font-size: 0.75rem;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    white-space: nowrap;
-    z-index: 1;
-    transition: all 0.3s ease;
-    opacity: 0.7;
-}
-
-.project-card:hover .project-badge {
-    opacity: 0.9;
-}
-
-.project-card.active .project-badge {
-    opacity: 1;
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.4);
-    transform: translateX(-50%) scale(1.1);
-}
-
-.project-image-container {
-    position: relative;
-    margin: 0.5rem auto;
-    width: 220px;
-    height: 140px;
-    overflow: hidden;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.project-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover .project-image {
-    transform: scale(1.05);
-}
-
-.project-info {
-    margin-top: 0.5rem;
-    color: rgba(255, 255, 255, 0.9);
-    padding: 0 5px;
-}
-
-    .project-info h2 {
-        font-size: 1.2rem;
-        font-weight: 600;
-        margin-bottom: 0.3rem;
-        color: #fff;
-    }
-
-    .project-info p {
-        font-size: 0.85rem;
-        color: rgba(255, 255, 255, 0.7);
-        margin-bottom: 0.2rem;
-    }
-
-.project-date {
-    font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.5);
-    margin-top: 0.2rem;
-    font-style: italic;
-}
-
-.project-details {
-    display: none;
-    padding: 1.5rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    margin-top: 1.5rem;
-    width: 100%;
-}
-
-    .project-details.active {
-        display: block;
-        opacity: 1;
-    }
-
-    .project-details h3 {
-        font-size: 1.6rem;
-        margin-bottom: 0.8rem;
-        color: #fff;
-    }
-
-    .project-details p {
-        line-height: 1.5;
-        margin-bottom: 1.2rem;
-    }
-
-    .project-details ul {
-        list-style-type: disc;
-        margin-left: 1.5rem;
-        margin-bottom: 1.2rem;
-    }
-
-    .project-details li {
-        margin-bottom: 0.5rem;
-        color: rgba(255, 255, 255, 0.8);
-    }
-
-.technologies {
-    margin: 1.5rem 0;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-    .technologies p {
-        margin: 0;
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 0.9rem;
-    }
-
-.project-details-images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 0.8rem;
-    margin-top: 1.5rem;
-}
-
-.detail-image {
-    width: 100%;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.slider--projects,
-.slider--projects__container,
-.projects-list {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-    .slider--projects::-webkit-scrollbar,
-    .slider--projects__container::-webkit-scrollbar,
-    .projects-list::-webkit-scrollbar {
-        display: none;
-    }
-
-@media (max-width: 900px) {
-    .slider--projects__container {
-        width: 600px;
-    }
-
-    .projects-list li {
-        transform: translateX(100px);
-    }
-}
-
-@media (max-width: 700px) {
-    .slider--projects__container {
-        width: 500px;
-    }
-
-    .projects-list li {
-        transform: translateX(75px);
-    }
-
-    .project-badge {
-        font-size: 0.7rem;
-        padding: 4px 12px;
-        top: -18px;
-    }
-}
-
-@media (max-width: 500px) {
-    .slider--projects__container {
-        width: 300px;
-    }
-
-    .projects-list li {
-        flex: 0 0 220px;
-        max-width: 220px;
-        transform: translateX(25px);
-    }
-
-    .project-image-container {
-        width: 200px;
-        height: 120px;
-    }
-
-    .project-badge {
-        font-size: 0.65rem;
-        padding: 3px 10px;
-        top: -16px;
-    }
-}*/
-.projects-content {
+﻿.projects-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -318,7 +59,7 @@
     .projects-list li {
         width: 300px;
         height: 280px;
-        opacity: 0.25;
+        opacity: 1;
         position: absolute;
         left: 50%;
         margin-left: -150px;
@@ -326,24 +67,24 @@
     }
 
 .project-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
     border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     height: 100%;
     width: 100%;
     cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-    /* Estados de las tarjetas */
     .project-card.hide {
-        transform: translateX(-420px) scale(0.85);
+        transform: translateX(-520px) scale(0.85); 
         opacity: 0;
     }
 
     .project-card.prev {
-        transform: translateX(-220px) scale(0.85);
-        opacity: 0.7;
+        transform: translateX(-320px) scale(0.85);
+        opacity: 0.9;
         cursor: pointer;
     }
 
@@ -353,13 +94,13 @@
     }
 
     .project-card.next {
-        transform: translateX(220px) scale(0.85);
-        opacity: 0.7;
+        transform: translateX(320px) scale(0.85);
+        opacity: 0.9;
         cursor: pointer;
     }
 
     .project-card.new-next {
-        transform: translateX(420px) scale(0.85);
+        transform: translateX(520px) scale(0.85);
         opacity: 0;
     }
 
@@ -385,34 +126,42 @@
     height: 180px;
     overflow: hidden;
     border-radius: 8px 8px 0 0;
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .project-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 1;
 }
 
 .project-info {
     padding: 1rem;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 8px 8px;
+    backdrop-filter: blur(10px);
 }
 
     .project-info h2 {
         font-size: 1.2rem;
-        color: white;
+        color: rgba(255, 255, 255, 1);
         margin-bottom: 0.5rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
 
     .project-info p {
         font-size: 0.85rem;
-        color: rgba(255, 255, 255, 0.7);
+        color: rgba(255, 255, 255, 0.9);
         margin-bottom: 0.5rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     }
 
 .project-date {
     font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.7);
     font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* Detalles del proyecto */
@@ -431,20 +180,6 @@
         opacity: 1;
     }
 
-.project-details {
-    display: none;
-    padding: 1.5rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    margin-top: 1.5rem;
-    width: 100%;
-}
-
-    .project-details.active {
-        display: block;
-        opacity: 1;
-    }
-
     .project-details h3 {
         font-size: 1.6rem;
         margin-bottom: 0.8rem;
@@ -454,6 +189,7 @@
     .project-details p {
         line-height: 1.5;
         margin-bottom: 1.2rem;
+        color: rgba(255, 255, 255, 0.9);
     }
 
     .project-details ul {
@@ -494,64 +230,50 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.slider--projects,
-.slider--projects__container,
-.projects-list {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+/* Estilos para el filtrado */
+.project-card[data-type] {
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-    .slider--projects::-webkit-scrollbar,
-    .slider--projects__container::-webkit-scrollbar,
-    .projects-list::-webkit-scrollbar {
-        display: none;
+    .project-card[data-type].filtered-out {
+        opacity: 0;
+        transform: scale(0.8);
+        pointer-events: none;
     }
 
+/* Ajustes responsivos */
 @media (max-width: 900px) {
-    .slider--projects__container {
-        width: 600px;
+    .project-card.hide {
+        transform: translateX(-420px) scale(0.85);
     }
 
-    .projects-list li {
-        transform: translateX(100px);
-    }
-}
-
-@media (max-width: 700px) {
-    .slider--projects__container {
-        width: 500px;
+    .project-card.prev {
+        transform: translateX(-270px) scale(0.85);
     }
 
-    .projects-list li {
-        transform: translateX(75px);
+    .project-card.next {
+        transform: translateX(270px) scale(0.85);
     }
 
-    .project-badge {
-        font-size: 0.7rem;
-        padding: 4px 12px;
-        top: -18px;
+    .project-card.new-next {
+        transform: translateX(420px) scale(0.85);
     }
 }
 
-@media (max-width: 500px) {
-    .slider--projects__container {
-        width: 300px;
+@media (max-width: 600px) {
+    .project-card.hide {
+        transform: translateX(-320px) scale(0.85);
     }
 
-    .projects-list li {
-        flex: 0 0 220px;
-        max-width: 220px;
-        transform: translateX(25px);
+    .project-card.prev {
+        transform: translateX(-220px) scale(0.85);
     }
 
-    .project-image-container {
-        width: 200px;
-        height: 120px;
+    .project-card.next {
+        transform: translateX(220px) scale(0.85);
     }
 
-    .project-badge {
-        font-size: 0.65rem;
-        padding: 3px 10px;
-        top: -16px;
+    .project-card.new-next {
+        transform: translateX(320px) scale(0.85);
     }
 }
