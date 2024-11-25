@@ -47,13 +47,8 @@
 }
 
 .projects-list {
-    height: 200px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 1000px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
 }
 
     .projects-list li {
@@ -64,6 +59,7 @@
         left: 50%;
         margin-left: -150px;
         transition: transform 1s, opacity 1s;
+        perspective: 1000px;
     }
 
 .project-card {
@@ -75,51 +71,42 @@
     width: 100%;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1), opacity 0.6s ease;
+    backface-visibility: hidden;
+    will-change: transform, opacity;
 }
 
     .project-card.hide {
-        transform: translateX(-520px) scale(0.85); 
+        transform: translateX(-520px) scale(0.85);
         opacity: 0;
+        z-index: 0;
     }
 
     .project-card.prev {
         transform: translateX(-320px) scale(0.85);
-        opacity: 0.9;
-        cursor: pointer;
+        opacity: 0.7;
+        z-index: 1;
     }
 
     .project-card.active {
         transform: translateX(0) scale(1);
-        opacity: 1;
+        opacity: 0.9;
+        z-index: 1;
     }
 
     .project-card.next {
         transform: translateX(320px) scale(0.85);
         opacity: 0.9;
-        cursor: pointer;
+        z-index: 1;
     }
 
     .project-card.new-next {
         transform: translateX(520px) scale(0.85);
         opacity: 0;
+        z-index: 0;
     }
 
-/* Contenido de las tarjetas */
-.project-badge {
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
-    padding: 5px 15px;
-    border-radius: 15px;
-    font-size: 0.75rem;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    white-space: nowrap;
-    z-index: 1;
-}
+
 
 .project-image-container {
     width: 100%;
