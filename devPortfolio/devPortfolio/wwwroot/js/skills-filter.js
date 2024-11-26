@@ -2,7 +2,6 @@
     const filterButtons = document.querySelectorAll('.skills-filter .filter-button');
     const skillsSections = document.querySelectorAll('.skills-section');
 
-    // Mostrar Hard Skills por defecto
     const defaultSection = document.querySelector('.skills-section[data-type="hard"]');
     if (defaultSection) {
         defaultSection.classList.add('active');

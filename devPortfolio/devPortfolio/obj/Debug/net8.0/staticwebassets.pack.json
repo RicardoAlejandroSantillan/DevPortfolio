@@ -65,18 +65,6 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\github.png",
-      "PackagePath": "staticwebassets\\images\\github.png"
-    },
-    {
-      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\gmail.png",
-      "PackagePath": "staticwebassets\\images\\gmail.png"
-    },
-    {
-      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\linkedin.png",
-      "PackagePath": "staticwebassets\\images\\linkedin.png"
-    },
-    {
       "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\projects\\BookShelf\\cover.webp",
       "PackagePath": "staticwebassets\\images\\projects\\BookShelf\\cover.webp"
     },
@@ -113,12 +101,8 @@
       "PackagePath": "staticwebassets\\images\\social media\\RS_Group.png"
     },
     {
-      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\twitterX.png",
-      "PackagePath": "staticwebassets\\images\\twitterX.png"
-    },
-    {
-      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\whatsapp.png",
-      "PackagePath": "staticwebassets\\images\\whatsapp.png"
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\images\\social media\\RS_Group.webp",
+      "PackagePath": "staticwebassets\\images\\social media\\RS_Group.webp"
     },
     {
       "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\js\\projects-slider.js",

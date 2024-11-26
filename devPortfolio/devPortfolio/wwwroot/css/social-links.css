@@ -48,7 +48,8 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url('../images/social media/RS_Group.png');
+        /*background-image: url('../images/social media/RS_Group.png');*/
+        background-image: url('../images/social media/rs_group.webp');
         background-repeat: no-repeat;
         background-size: 225px 45px;
         filter: invert(1) grayscale(1) brightness(2);
