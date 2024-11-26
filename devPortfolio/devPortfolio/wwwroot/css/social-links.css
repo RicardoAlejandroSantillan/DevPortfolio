@@ -1,21 +1,21 @@
 ﻿.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     position: fixed;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra los elementos horizontalmente */
-    gap: 15px;
     z-index: 1000;
-    text-align: center; /* Asegura que el texto también esté centrado */
+    text-align: center;
+    white-space: nowrap;
 }
 
-    /* Título "Contact Me" */
     .social-links::before {
         content: "Contact Me";
-        display: block; /* Asegura que ocupe todo el ancho disponible */
-        width: 100%; /* Ocupa todo el ancho del contenedor */
+        display: block;
+        width: 100%;
         color: rgba(255, 255, 255, 0.9);
         font-size: 1.1em;
         text-align: center;
@@ -28,7 +28,8 @@
 .social-link {
     width: 45px;
     height: 45px;
-    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -36,51 +37,76 @@
     transition: all 0.3s ease;
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 
-    .social-link:hover {
-        transform: scale(1.1);
-        background: rgba(255, 255, 255, 0.2);
-        border-color: rgba(255, 255, 255, 0.5);
-        box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-    }
-
-    .social-link img {
-        width: 25px;
-        height: 25px;
-        filter: brightness(0) invert(1);
-        opacity: 0.8;
-        transition: opacity 0.3s ease;
-    }
-
-    .social-link:hover img {
-        opacity: 1;
-    }
-
-    /* Tooltips para los nombres de redes sociales */
-    .social-link::after {
-        content: attr(data-tooltip);
+    .social-link::before {
+        content: "";
         position: absolute;
-        right: 60px;
-        background: rgba(0, 0, 0, 0.8);
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 0.9em;
-        white-space: nowrap;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/social media/RS_Group.png');
+        background-repeat: no-repeat;
+        background-size: 225px 45px;
+        filter: invert(1) grayscale(1) brightness(2);
     }
 
-    .social-link:hover::after {
-        opacity: 1;
-        visibility: visible;
-        transform: translateX(-5px);
-    }
+.whatsapp-icon::before {
+    background-position: 0 0;
+}
+
+.linkedin-icon::before {
+    background-position: -45px 0;
+}
+
+.github-icon::before {
+    background-position: -90px 0;
+}
+
+.x-icon::before {
+    background-position: -135px 0;
+}
+
+.gmail-icon::before {
+    background-position: -180px 0;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.social-link::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.social-link:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-5px, -50%);
+}
 
 @media (max-width: 768px) {
     .social-links {
@@ -92,8 +118,27 @@
         height: 40px;
     }
 
-        .social-link img {
-            width: 22px;
-            height: 22px;
+        .social-link::before {
+            background-size: 200px 40px;
         }
+
+    .whatsapp-icon::before {
+        background-position: 0 0;
+    }
+
+    .linkedin-icon::before {
+        background-position: -40px 0;
+    }
+
+    .github-icon::before {
+        background-position: -80px 0;
+    }
+
+    .x-icon::before {
+        background-position: -120px 0;
+    }
+
+    .gmail-icon::before {
+        background-position: -160px 0;
+    }
 }

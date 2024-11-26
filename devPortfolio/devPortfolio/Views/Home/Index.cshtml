@@ -11,27 +11,17 @@
     <div class="center-screen">
 
         <div class="social-links">
-            <a href="https://wa.me/8451152129" class="social-link" data-tooltip="WhatsApp" target="_blank">
-                <img src="~/images/social media/whatsapp.png" />
-            </a>
-            <a href="https://www.linkedin.com/in/ricardoalejandro/" class="social-link" data-tooltip="LinkedIn" target="_blank">
-                <img src="~/images/social media/linkedin.png" />
-            </a>
-            <a href="https://github.com/RicardoAlejandroSantillan" class="social-link" data-tooltip="GitHub" target="_blank">
-                <img src="~/images/social media/github.png" />
-            </a>
-            <a href="https://x.com/AlexSantillanX?t=uR9oxlE-umuSlXCRQEx5Ew&s=09" class="social-link" data-tooltip="X (Twitter)" target="_blank">
-                <img src="~/images/social media/twitterx.png" />
-            </a>
-            <a href="mailto:ricardo.a.p.santillan@gmail.com" class="social-link" data-tooltip="Gmail">
-                <img src="~/images/social media/gmail.png" />
-            </a>
+            <a href="https://wa.me/8451152129" class="social-link whatsapp-icon" data-tooltip="WhatsApp" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/ricardoalejandro/" class="social-link linkedin-icon" data-tooltip="LinkedIn" target="_blank"></a>
+            <a href="https://github.com/RicardoAlejandroSantillan" class="social-link github-icon" data-tooltip="GitHub" target="_blank"></a>
+            <a href="https://x.com/AlexSantillanX?t=uR9oxlE-umuSlXCRQEx5Ew&s=09" class="social-link x-icon" data-tooltip="X (Twitter)" target="_blank"></a>
+            <a href="mailto:ricardo.a.p.santillan@gmail.com" class="social-link gmail-icon" data-tooltip="Gmail"></a>
         </div>
 
         <div class="panel-container">
             <div class="text-center glass-panel panel-left">
                 <div class="profile-section">
-                    <!-- Espacio reservado para el contenido superior -->
+                    <!-- falta agregar foto -->
                 </div>
                 <nav class="nav-menu">
                     <button class="nav-button active" data-section="introduction">Introduction</button>
@@ -70,36 +60,29 @@
 @section Scripts {
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Obtener todos los botones y secciones
             const buttons = document.querySelectorAll('.nav-button');
             const sections = document.querySelectorAll('.content-section');
 
-            // Función para mostrar una sección específica
             function showSection(sectionId) {
-                // Ocultar todas las secciones
                 sections.forEach(section => {
                     section.classList.remove('active');
                 });
 
-                // Remover active de todos los botones
                 buttons.forEach(button => {
                     button.classList.remove('active');
                 });
 
-                // Mostrar la sección seleccionada
                 const selectedSection = document.getElementById(sectionId);
                 if (selectedSection) {
                     selectedSection.classList.add('active');
                 }
 
-                // Activar el botón correspondiente
                 const selectedButton = document.querySelector(`[data-section="${sectionId}"]`);
                 if (selectedButton) {
                     selectedButton.classList.add('active');
                 }
             }
 
-            // Agregar event listeners a los botones
             buttons.forEach(button => {
                 button.addEventListener('click', function() {
                     const sectionId = this.getAttribute('data-section');
