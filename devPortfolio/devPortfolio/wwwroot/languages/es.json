@@ -1,0 +1,28 @@
+{
+  "introduction": {
+    "title": "¡Hola! Soy Alejandro",
+    "subtitle": "Desarrollador de Software y Aspirante a Científico de Datos",
+    "introHighlight": "🚀 Desarrollador Full Stack con experiencia práctica en ASP.NET, Java y tecnologías web modernas, actualmente como interno en Daikin, donde colaboro en un equipo ágil desarrollando soluciones innovadoras de TI.",
+    "techStackTitle": "💻 Stack Tecnológico:",
+    "webDevTitle": "Desarrollo Web",
+    "webDevStack": "ASP.NET, Bootstrap, HTML, CSS, JavaScript",
+    "desktopDevTitle": "Desarrollo de Escritorio",
+    "desktopDevStack": "Java, C, C++",
+    "databasesTitle": "Bases de Datos",
+    "databasesStack": "SQL Server",
+    "versionControlTitle": "Control de Versiones",
+    "versionControlStack": "Git",
+    "methodologiesTitle": "Metodologías",
+    "methodologiesStack": "Agile",
+    "professionalSummary": "💡 Destaco por mi pasión por el aprendizaje continuo y adaptabilidad a nuevas tecnologías. Con sólido dominio en Java y C#, construyo mi camino hacia la ciencia de datos mientras fortalezco mis habilidades en desarrollo de software.",
+    "credentials": "🎓 Credenciales:",
+    "credential1": "Certificación Linguaskill B1",
+    "credential2": "Actualmente cursando certificación en metodologías MVC",
+    "goalTitle": "🎯 Meta Profesional:",
+    "goalText": "Evolucionar hacia roles de Ciencia de Datos mientras continúo creciendo como Desarrollador Full Stack.",
+    "journeyTitle": "🗺️ Mi Trayectoria",
+    "journeyText1": "Mi interés por la tecnología comenzó en 2018, llevándome a estudiar Ingeniería en Tecnologías de la Información en UTAN campus industrias. Me apasiona del desarrollo el proceso creativo de construir soluciones personalizadas para cada proyecto.",
+    "journeyText2": "Mi experiencia desarrollando aplicaciones de escritorio fortaleció mi interés en crear soluciones que impacten directamente en la experiencia del usuario. Este camino me ha llevado a interesarme en la ciencia de datos, donde veo el potencial de combinar el desarrollo tradicional con el análisis de datos para crear soluciones más completas.",
+    "journeyText3": "Me mantengo actualizado siguiendo a líderes de la industria y desarrollando proyectos personales. Mi enfoque metódico y proactivo, junto con mi pasión por la optimización continua, define mi estilo de trabajo."
+  }
+}

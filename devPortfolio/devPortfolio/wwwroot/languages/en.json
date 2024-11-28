@@ -1,0 +1,28 @@
+﻿{
+  "introduction": {
+    "title": "Hi! I'm Alejandro",
+    "subtitle": "Software Developer & Aspiring Data Scientist",
+    "introHighlight": "🚀 Full Stack Developer with hands-on experience in ASP.NET, Java, and modern web technologies, currently interning at Daikin, where I collaborate in an agile team developing innovative IT solutions.",
+    "techStackTitle": "💻 Tech Stack:",
+    "webDevTitle": "Web Development",
+    "webDevStack": "ASP.NET, Bootstrap, HTML, CSS, JavaScript",
+    "desktopDevTitle": "Desktop Development",
+    "desktopDevStack": "Java, C, C++",
+    "databasesTitle": "Databases",
+    "databasesStack": "SQL Server",
+    "versionControlTitle": "Version Control",
+    "versionControlStack": "Git",
+    "methodologiesTitle": "Methodologies",
+    "methodologiesStack": "Agile",
+    "professionalSummary": "💡 I stand out for my passion for continuous learning and adaptability to new technologies. With strong proficiency in Java and C#, I'm building my path towards data science while strengthening my software development skills.",
+    "credentials": "🎓 Credentials:",
+    "credential1": "Linguaskill B1 Certified",
+    "credential2": "Currently pursuing MVC methodologies certification",
+    "goalTitle": "🎯 Professional Goal:",
+    "goalText": "To evolve into Data Science roles while continuing to grow as a Full Stack Developer.",
+    "journeyTitle": "🗺️ My Journey",
+    "journeyText1": "My interest in technology began in 2018, leading me to study Information Technology Engineering at UTAN campus industrias. What I'm passionate about in development is the creative process of building customized solutions for each project to solve.",
+    "journeyText2": "My experience developing desktop applications strengthened my interest in creating solutions that directly impact the user experience. This path has led me to become interested in data science, where I see the potential to combine traditional development with data analysis to create more comprehensive solutions.",
+    "journeyText3": "I stay current by following industry leaders and developing personal projects. My methodical and proactive approach, along with my passion for continuous optimization, defines my work style."
+  }
+}

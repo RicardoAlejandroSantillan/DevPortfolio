@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\layout.css"
     },
     {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\css\\lenguages.css",
+      "PackagePath": "staticwebassets\\css\\lenguages.css"
+    },
+    {
       "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\css\\navigation.css",
       "PackagePath": "staticwebassets\\css\\navigation.css"
     },
@@ -119,6 +123,18 @@
     {
       "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\js\\testimonials-filter.js",
       "PackagePath": "staticwebassets\\js\\testimonials-filter.js"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\js\\translation.js",
+      "PackagePath": "staticwebassets\\js\\translation.js"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\languages\\en.json",
+      "PackagePath": "staticwebassets\\languages\\en.json"
+    },
+    {
+      "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\languages\\es.json",
+      "PackagePath": "staticwebassets\\languages\\es.json"
     },
     {
       "Id": "C:\\Users\\PerezRA\\Documents\\1 - Personal\\Mia Proyectos\\MVC devPortfolio\\DevPortfolio\\devPortfolio\\devPortfolio\\wwwroot\\lib\\bootstrap\\LICENSE",

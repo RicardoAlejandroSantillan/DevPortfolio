@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="~/css/projects-slider.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/skills.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/testimonials.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/lenguages.css" />
 
     <script src="~/js/site.js"></script>
     <script src="~/js/projects-slider.js"></script>
@@ -71,6 +72,12 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/projects-slider.js" asp-append-version="true"></script>
+    <script src="~/js/translation.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+    <div class="language-selector">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+    </div>
 </body>
 </html>
