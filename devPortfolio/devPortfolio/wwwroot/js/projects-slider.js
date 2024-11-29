@@ -1,122 +1,97 @@
-﻿function initializeProjectSlider() {
+﻿document.addEventListener('DOMContentLoaded', function () {
+    const filterButtons = document.querySelectorAll('.projects-filter .filter-button');
     const projectCards = document.querySelectorAll('.project-card');
     const projectDetails = document.querySelectorAll('.project-details');
-    const filterButtons = document.querySelectorAll('.filter-button');
-
     let currentIndex = 0;
+    let visibleCards = [];
 
-    function updateCards(filterType = 'personal') {
-        let visibleCards = Array.from(projectCards).filter(card => {
-            return card.dataset.type === filterType;
+    const personalProjects = ['card-devPortfolio', 'card-bookshelf', 'card-prosalud'];
+    const professionalProjects = ['card-daikin'];
+
+    const navigation = document.createElement('div');
+    navigation.className = 'carousel-navigation';
+    navigation.innerHTML = `
+        <button class="nav-btn prev-btn">◀</button>
+        <button class="nav-btn next-btn">▶</button>
+    `;
+    document.querySelector('.slider--projects').appendChild(navigation);
+
+    function getVisibleCards(type) {
+        if (type === 'personal') {
+            return Array.from(projectCards).filter(card =>
+                personalProjects.includes(card.id));
+        } else if (type === 'professional') {
+            return Array.from(projectCards).filter(card =>
+                professionalProjects.includes(card.id));
+        }
+        return [];
+    }
+
+    updateCardStyles();
+    function updateCardStyles() {
+        projectCards.forEach(card => {
+            card.style.display = 'none';
         });
 
-        visibleCards.forEach((card, index) => {
-            if (index === currentIndex) {
-                card.classList.add('active');
-                card.classList.remove('prev', 'next', 'hide', 'new-next');
-            } else if (index === currentIndex - 1) {
-                card.classList.add('prev');
-                card.classList.remove('active', 'next', 'hide', 'new-next');
-            } else if (index === currentIndex + 1) {
-                card.classList.add('next');
-                card.classList.remove('active', 'prev', 'hide', 'new-next');
-            } else if (index < currentIndex - 1) {
-                card.classList.add('hide');
-                card.classList.remove('active', 'prev', 'next', 'new-next');
-            } else {
-                card.classList.add('new-next');
-                card.classList.remove('active', 'prev', 'next', 'hide');
-            }
+        if (visibleCards.length === 0) return;
+
+        const prevIndex = (currentIndex - 1 + visibleCards.length) % visibleCards.length;
+        const nextIndex = (currentIndex + 1) % visibleCards.length;
+
+        [prevIndex, currentIndex, nextIndex].forEach((index, i) => {
+            const card = visibleCards[index];
+            if (!card) return;
+
+            card.style.display = 'block';
+            card.style.opacity = i === 1 ? '1' : '0.4';
+            card.style.zIndex = i === 1 ? '2' : '1';
+            card.style.left = '50%';
+
+            const xPos = i === 0 ? -120 : i === 1 ? -50 : 20;
+            const scale = i === 1 ? 1 : 0.8;
+            card.style.transform = `translateX(${xPos}%) scale(${scale})`;
+            card.style.transition = 'all 0.4s ease-in-out';
         });
 
         const activeCard = visibleCards[currentIndex];
-        if (activeCard) {
-            const projectId = Array.from(projectCards).indexOf(activeCard) + 1;
-            projectDetails.forEach((detail, index) => {
-                detail.classList.toggle('active', index === projectId - 1);
-            });
-        }
+        const cardIndex = Array.from(projectCards).indexOf(activeCard);
+        projectDetails.forEach((detail, i) => {
+            detail.classList.toggle('active', i === cardIndex);
+        });
     }
 
     function nextSlide() {
-        const currentFilter = document.querySelector('.filter-button.active').dataset.filter;
-        const visibleCards = Array.from(projectCards).filter(card => {
-            return card.dataset.type === currentFilter;
-        });
-
-        if (currentIndex < visibleCards.length - 1) {
-            currentIndex++;
-            updateCards(currentFilter);
-        }
+        if (visibleCards.length <= 1) return;
+        currentIndex = (currentIndex + 1) % visibleCards.length;
+        updateCardStyles();
     }
 
     function prevSlide() {
-        if (currentIndex > 0) {
-            currentIndex--;
-            const currentFilter = document.querySelector('.filter-button.active').dataset.filter;
-            updateCards(currentFilter);
-        }
+        if (visibleCards.length <= 1) return;
+        currentIndex = (currentIndex - 1 + visibleCards.length) % visibleCards.length;
+        updateCardStyles();
     }
 
     filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const filterType = button.dataset.filter;
+        button.addEventListener('click', function () {
             filterButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
+            this.classList.add('active');
+
+            const type = this.getAttribute('data-value');
             currentIndex = 0;
-
-            projectCards.forEach(card => {
-                if (card.dataset.type === filterType) {
-                    card.style.display = '';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-
-            updateCards(filterType);
+            visibleCards = getVisibleCards(type);
+            updateCardStyles(true);
         });
     });
 
-    projectCards.forEach((card, index) => {
-        card.addEventListener('click', () => {
-            if (card.classList.contains('prev')) {
-                prevSlide();
-            } else if (card.classList.contains('next')) {
-                nextSlide();
-            }
-        });
+    document.querySelector('.next-btn').addEventListener('click', nextSlide);
+    document.querySelector('.prev-btn').addEventListener('click', prevSlide);
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') nextSlide();
+        if (e.key === 'ArrowLeft') prevSlide();
     });
 
-    let touchstartX = 0;
-    let touchendX = 0;
-
-    document.addEventListener('touchstart', e => {
-        touchstartX = e.changedTouches[0].screenX;
-    });
-
-    document.addEventListener('touchend', e => {
-        touchendX = e.changedTouches[0].screenX;
-        handleSwipe();
-    });
-
-    function handleSwipe() {
-        if (touchendX < touchstartX) nextSlide();
-        if (touchendX > touchstartX) prevSlide();
-    }
-
-    projectCards.forEach(card => {
-        if (card.dataset.type !== 'personal') {
-            card.style.display = 'none';
-        }
-    });
-
-    const personalButton = document.querySelector('[data-filter="personal"]');
-    if (personalButton) {
-        personalButton.classList.add('active');
-    }
-    updateCards('personal');
-}
-
-document.addEventListener('DOMContentLoaded', initializeProjectSlider);
-document.addEventListener('contentChanged', initializeProjectSlider);
-window.addEventListener('resize', initializeProjectSlider);
+    visibleCards = getVisibleCards('personal');
+    updateCardStyles();
+});

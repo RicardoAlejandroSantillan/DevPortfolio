@@ -1,28 +1,221 @@
 {
+  "index": {
+    "hello": "#HOLA MUNDO",
+    "name": "Soy Ricardo Alejandro Pérez Santillán"
+  },
+  "navigation": {
+    "introduction": "Introducción",
+    "skills": "Habilidades",
+    "projects": "Proyectos y Experiencia",
+    "education": "Educación",
+    "articles": "Blog/Artículos",
+    "testimonials": "Testimonios"
+  },
   "introduction": {
     "title": "¡Hola! Soy Alejandro",
-    "subtitle": "Desarrollador de Software y Aspirante a Científico de Datos",
-    "introHighlight": "🚀 Desarrollador Full Stack con experiencia práctica en ASP.NET, Java y tecnologías web modernas, actualmente como interno en Daikin, donde colaboro en un equipo ágil desarrollando soluciones innovadoras de TI.",
+    "subtitle": "Desarrollador de Software y Aspirante a Data Scientist",
+    "introHighlight": "🚀 Desarrollador Full Stack con experiencia práctica en ASP.NET, Java y tecnologías web modernas, actualmente haciendo prácticas en Daikin, donde colaboro en un equipo ágil desarrollando soluciones TI innovadoras.",
     "techStackTitle": "💻 Stack Tecnológico:",
-    "webDevTitle": "Desarrollo Web",
+    "webDevTitle": "Desarrollo Web:",
     "webDevStack": "ASP.NET, Bootstrap, HTML, CSS, JavaScript",
-    "desktopDevTitle": "Desarrollo de Escritorio",
+    "desktopDevTitle": "Desarrollo de Escritorio:",
     "desktopDevStack": "Java, C, C++",
-    "databasesTitle": "Bases de Datos",
+    "databasesTitle": "Bases de Datos:",
     "databasesStack": "SQL Server",
-    "versionControlTitle": "Control de Versiones",
+    "versionControlTitle": "Control de Versiones:",
     "versionControlStack": "Git",
-    "methodologiesTitle": "Metodologías",
+    "methodologiesTitle": "Metodologías:",
     "methodologiesStack": "Agile",
-    "professionalSummary": "💡 Destaco por mi pasión por el aprendizaje continuo y adaptabilidad a nuevas tecnologías. Con sólido dominio en Java y C#, construyo mi camino hacia la ciencia de datos mientras fortalezco mis habilidades en desarrollo de software.",
+    "professionalSummary": "💡 Me destaco por mi pasión por el aprendizaje continuo y adaptabilidad a nuevas tecnologías. Con sólido dominio en Java y C#, estoy construyendo mi camino hacia la ciencia de datos mientras fortalezco mis habilidades en desarrollo de software.",
     "credentials": "🎓 Credenciales:",
-    "credential1": "Certificación Linguaskill B1",
+    "credential1": "Certificado Linguaskill B1",
     "credential2": "Actualmente cursando certificación en metodologías MVC",
     "goalTitle": "🎯 Meta Profesional:",
     "goalText": "Evolucionar hacia roles de Ciencia de Datos mientras continúo creciendo como Desarrollador Full Stack.",
     "journeyTitle": "🗺️ Mi Trayectoria",
-    "journeyText1": "Mi interés por la tecnología comenzó en 2018, llevándome a estudiar Ingeniería en Tecnologías de la Información en UTAN campus industrias. Me apasiona del desarrollo el proceso creativo de construir soluciones personalizadas para cada proyecto.",
-    "journeyText2": "Mi experiencia desarrollando aplicaciones de escritorio fortaleció mi interés en crear soluciones que impacten directamente en la experiencia del usuario. Este camino me ha llevado a interesarme en la ciencia de datos, donde veo el potencial de combinar el desarrollo tradicional con el análisis de datos para crear soluciones más completas.",
+    "journeyText1": "Mi interés por la tecnología comenzó en 2018, llevándome a estudiar Ingeniería en Tecnologías de la Información en UTAN campus industrias. Lo que me apasiona del desarrollo es el proceso creativo de construir soluciones personalizadas para cada proyecto a resolver.",
+    "journeyText2": "Mi experiencia desarrollando aplicaciones de escritorio fortaleció mi interés en crear soluciones que impacten directamente en la experiencia del usuario. Este camino me ha llevado a interesarme en la ciencia de datos, donde veo el potencial de combinar el desarrollo tradicional con el análisis de datos para crear soluciones más integrales.",
     "journeyText3": "Me mantengo actualizado siguiendo a líderes de la industria y desarrollando proyectos personales. Mi enfoque metódico y proactivo, junto con mi pasión por la optimización continua, define mi estilo de trabajo."
+  },
+  "testimonials": {
+    "title": "Testimonios",
+    "addButton": "Agregar Testimonio",
+    "viewButton": "Ver Testimonios",
+    "form": {
+      "emailLabel": "Correo:",
+      "nameLabel": "Nombre/Alias:",
+      "companyLabel": "Empresa:",
+      "ratingLabel": "Calificación:",
+      "descriptionLabel": "Descripción:",
+      "submitButton": "Enviar Testimonio"
+    },
+    "successMessage": "¡Testimonio enviado exitosamente!"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "hardSkills": "Habilidades Técnicas",
+    "softSkills": "Habilidades Blandas",
+    "programming": {
+      "title": "Lenguajes de Programación",
+      "intermediate": "🔵 Nivel Intermedio",
+      "basic": "🔵 Nivel Básico"
+    },
+    "development": {
+      "title": "Desarrollo y Frameworks"
+    },
+    "databases": {
+      "title": "Bases de Datos"
+    },
+    "tools": {
+      "title": "Herramientas y Tecnologías"
+    },
+    "languages": {
+      "title": "Idiomas"
+    },
+    "management": {
+      "title": "Gestión y Organización"
+    },
+    "interpersonal": {
+      "title": "Habilidades Interpersonales"
+    }
+  },
+  "projects": {
+    "title": "Proyectos y Experiencia",
+    "personal": "Proyectos Personales",
+    "professional": "Experiencia Profesional",
+    "devPortfolio": {
+      "title": "DevPortfolio",
+      "description": "Portafolio web con diseño espacial y glassmorfismo",
+      "mainFeatures": "Características principales:",
+      "features": [
+        "Diseño espacial con animaciones de estrellas",
+        "Interfaz moderna con efectos de glassmorfismo",
+        "Sistema de navegación dinámico",
+        "Carrusel de proyectos interactivo",
+        "Enlaces de redes sociales con efectos hover",
+        "Diseño totalmente responsivo",
+        "Animaciones y transiciones suaves"
+      ],
+      "technologies": "Tecnologías: ASP.NET MVC, C#, JavaScript, HTML5, CSS3, jQuery",
+      "challenges": "Desafíos superados:",
+      "challengesList": [
+        "Implementación de animaciones complejas para fondo espacial",
+        "Desarrollo de carrusel personalizado con vista previa de proyectos adyacentes",
+        "Integración de efectos glassmorfismo manteniendo el rendimiento",
+        "Gestión de estados y transiciones en navegación de secciones"
+      ]
+    },
+    "daikin": {
+      "title": "Daikin Manufacturing Mexico",
+      "description": "Soporte y Desarrollo MVC",
+      "mainResponsibilities": "Responsabilidades principales:",
+      "responsibilities": [
+        "Mantenimiento y mejora de aplicaciones existentes",
+        "Desarrollo de nuevas funcionalidades",
+        "Optimización de consultas SQL",
+        "Mejoras en la interfaz de usuario",
+        "Colaboración en equipo usando metodologías ágiles"
+      ],
+      "technologies": "Tecnologías: ASP.NET MVC, C#, SQL Server, JavaScript, Bootstrap"
+    },
+    "bookshelf": {
+      "title": "BookShelf - Biblioteca Personal Digital",
+      "description": "Sistema de gestión de biblioteca personal",
+      "mainFeatures": "Características principales:",
+      "features": [
+        "Gestión completa de libros, autores y géneros",
+        "Interfaz intuitiva con paneles expandibles",
+        "Sistema de formularios dinámico",
+        "Carga de datos asíncrona con AJAX",
+        "Clasificación y búsqueda avanzada",
+        "Sistema personalizado de etiquetas"
+      ],
+      "technologies": "Tecnologías: ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript"
+    },
+    "prosalud": {
+      "title": "ProSalud - Sistema Integral de Gestión Médica",
+      "description": "Plataforma completa para gestión de consultorios médicos",
+      "mainFeatures": "Características principales:",
+      "features": [
+        "Gestión de pacientes y expedientes médicos",
+        "Sistema de citas y agenda médica",
+        "Control de personal y especialidades",
+        "Sistema de facturación y programa VIP",
+        "Diagnósticos basados en ICD-10",
+        "Seguimiento de tratamientos"
+      ],
+      "technologies": "Tecnologías: ASP.NET MVC, C#, SQL Server, Entity Framework, Bootstrap, jQuery, HTML5, CSS3, JavaScript, Dapper"
+    }
+  },
+  "education": {
+    "title": "Educación",
+    "academic": "Formación Académica",
+    "engineeringTitle": "Ingeniería en Tecnologías de la Información | 2024",
+    "institution": "UTAN Campus Industrias",
+    "details": [
+      "Actualmente en 8vo cuatrimestre",
+      "Enfoque en desarrollo de software y soluciones empresariales"
+    ],
+    "certifications": "Certificaciones",
+    "linguaskill": "Linguaskill B1 | Dominio del Inglés",
+    "microsoft": {
+      "title": "Microsoft Office Specialist (MOS) | 2019",
+      "programs": [ "Word", "PowerPoint", "Excel" ]
+    },
+    "development": "Desarrollo Profesional Continuo",
+    "conferences": "Conferencias y Eventos",
+    "automotive": {
+      "title": "Participante en Clúster Automotriz | Universidad Tangamanga",
+      "topics": [
+        "Enfoque en tendencias tecnológicas del sector automotriz",
+        "Perspectivas de la industria TI y RH"
+      ]
+    },
+    "learning": "Aprendizaje Continuo",
+    "platforms": "Plataformas activas:"
+  },
+  "articles": {
+    "title": "Blog y Artículos",
+    "technical": "Publicaciones Técnicas",
+    "articles": {
+      "clean": {
+        "title": "Implementando Clean Architecture en ASP.NET Core",
+        "description": "Tutorial detallado sobre patrones de diseño y mejores prácticas"
+      },
+      "sql": {
+        "title": "Optimización de Consultas SQL Server",
+        "description": "Guía práctica para mejorar el rendimiento de bases de datos"
+      }
+    },
+    "repos": {
+      "title": "Repositorios Destacados",
+      "mvc": {
+        "title": "Tutorial-MVC-CSharp",
+        "description": "Guía paso a paso para principiantes en ASP.NET MVC",
+        "stats": "200+ estrellas en GitHub"
+      },
+      "patterns": {
+        "title": "Java-Design-Patterns",
+        "description": "Ejemplos prácticos de patrones de diseño en Java",
+        "highlight": "Contribuciones activas de la comunidad"
+      }
+    },
+    "community": {
+      "title": "Contribuciones a la Comunidad",
+      "stackoverflow": {
+        "title": "Stack Overflow",
+        "contributions": [
+          "15+ respuestas en temas de C# y Java",
+          "Especializado en resolución de problemas MVC"
+        ]
+      }
+    }
+  },
+  "social": {
+    "contact": "Contáctame"
+  },
+  "languages": {
+    "english": "Inglés",
+    "spanish": "Español"
   }
 }

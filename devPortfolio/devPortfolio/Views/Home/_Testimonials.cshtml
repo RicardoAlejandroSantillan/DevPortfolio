@@ -1,31 +1,31 @@
 ﻿<div class="testimonials-content">
-    <h2 class="section-title">Testimonials</h2>
+    <h2 class="section-title" data-section="testimonials" data-value="title">Testimonials</h2>
 
     <div class="testimonials-filter">
-        <button class="filter-button active" data-section="add">Add Testimonial</button>
-        <button class="filter-button" data-section="view">View Testimonials</button>
+        <button class="filter-button active" data-section="testimonials" data-value="addButton">Add Testimonial</button>
+        <button class="filter-button" data-section="testimonials" data-value="viewButton">View Testimonials</button>
     </div>
 
     <div class="testimonials-sections">
         <section class="testimonial-section active" id="add-testimonial">
             <form id="testimonialForm" class="testimonial-form">
                 <div class="form-group">
-                    <label for="email">Email:</label>
+                    <label for="email" data-section="testimonials" data-value="form.emailLabel">Email:</label>
                     <input type="email" id="email" required class="form-input">
                 </div>
 
                 <div class="form-group">
-                    <label for="name">Name/Alias:</label>
+                    <label for="name" data-section="testimonials" data-value="form.nameLabel">Name/Alias:</label>
                     <input type="text" id="name" required class="form-input">
                 </div>
 
                 <div class="form-group">
-                    <label for="company">Company:</label>
+                    <label for="company" data-section="testimonials" data-value="form.companyLabel">Company:</label>
                     <input type="text" id="company" required class="form-input">
                 </div>
 
                 <div>
-                    <label>Rating:</label>
+                    <label data-section="testimonials" data-value="form.ratingLabel">Rating:</label>
                 </div>
                 <div class="form-group rating-group justify-content-center">
                     <div class="star-rating">
@@ -43,15 +43,15 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="description">Description:</label>
+                    <label for="description" data-section="testimonials" data-value="form.descriptionLabel">Description:</label>
                     <textarea id="description" required class="form-input" rows="4"></textarea>
                 </div>
 
-                <button type="submit" class="submit-button">Submit Testimonial</button>
+                <button type="submit" class="submit-button" data-section="testimonials" data-value="form.submitButton">Submit Testimonial</button>
             </form>
         </section>
 
-        <div class="success-message">Testimonial submitted successfully!</div>
+        <div class="success-message" data-section="testimonials" data-value="successMessage">Testimonial submitted successfully!</div>
 
         <section class="testimonial-section" id="view-testimonials">
             <div class="testimonials-container">

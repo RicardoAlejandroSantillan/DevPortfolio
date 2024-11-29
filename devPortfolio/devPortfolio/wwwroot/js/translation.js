@@ -1,7 +1,6 @@
 ﻿const languageSelector = document.querySelector('.language-selector');
 const textElements = document.querySelectorAll('[data-section][data-value]');
 
-// Establecer español como idioma predeterminado
 const DEFAULT_LANGUAGE = 'en';
 
 const loadTranslations = async (language) => {
@@ -18,12 +17,17 @@ const loadTranslations = async (language) => {
 const updateContent = (translations) => {
     if (!translations) return;
 
-    textElements.forEach(element => {
+    const elements = document.querySelectorAll('[data-section][data-value]');
+    console.log(`Found ${elements.length} translatable elements`);
+
+    elements.forEach(element => {
         const section = element.dataset.section;
         const value = element.dataset.value;
 
         if (translations[section]?.[value]) {
             element.textContent = translations[section][value];
+        } else {
+            console.warn(`Missing translation: ${section}.${value}`);
         }
     });
 };
@@ -41,18 +45,37 @@ const changeLanguage = async (language) => {
         document.documentElement.lang = language;
         updateContent(translations);
         updateActiveButton(language);
+        console.log(`Language changed to: ${language}`);
     }
 };
 
-// Inicializar con español por defecto
 document.addEventListener('DOMContentLoaded', async () => {
     await changeLanguage(DEFAULT_LANGUAGE);
-
-    // Agregar eventos a los botones
     document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', async (e) => {
+            e.preventDefault();
             const language = btn.dataset.lang;
-            changeLanguage(language);
+            console.log(`Button clicked: ${language}`);
+            await changeLanguage(language);
         });
     });
 });
+
+function checkMissingTranslations(translations) {
+    const elements = document.querySelectorAll('[data-section][data-value]');
+    const missingTranslations = [];
+
+    elements.forEach(element => {
+        const section = element.dataset.section;
+        const value = element.dataset.value;
+        if (!translations[section]?.[value]) {
+            missingTranslations.push(`${section}.${value}`);
+        }
+    });
+
+    if (missingTranslations.length > 0) {
+        console.group('Missing Translations');
+        missingTranslations.forEach(missing => console.warn(missing));
+        console.groupEnd();
+    }
+}

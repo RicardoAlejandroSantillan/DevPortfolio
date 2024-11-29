@@ -21,12 +21,7 @@
     <link rel="stylesheet" href="~/css/projects-slider.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/skills.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/testimonials.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/lenguages.css" />
-
-    <script src="~/js/site.js"></script>
-    <script src="~/js/projects-slider.js"></script>
-    <script src="~/js/skills-filter.js" asp-append-version="true"></script>
-    <script src="~/js/testimonials-filter.js" asp-append-version="true"></script>
+    <link rel="stylesheet" href="~/css/lenguages.css" asp-append-version="true" />
 </head>
 <body>
     <header>
@@ -68,16 +63,19 @@
             &copy; 2024 - Alex PortfolioDev - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/translation.js" asp-append-version="true"></script>
     <script src="~/js/projects-slider.js" asp-append-version="true"></script>
-    <script src="~/js/translation.js"></script>
+    <script src="~/js/skills-filter.js" asp-append-version="true"></script>
+    <script src="~/js/testimonials-filter.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 
     <div class="language-selector">
-        <button class="lang-btn" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en" data-section="languages" data-value="english">EN</button>
+        <button class="lang-btn" data-lang="es" data-section="languages" data-value="spanish">ES</button>
     </div>
 </body>
 </html>

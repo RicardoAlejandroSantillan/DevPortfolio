@@ -1,18 +1,30 @@
 ﻿{
+  "index": {
+    "hello": "#HELLO WORLD",
+    "name": "I'm Ricardo Alejandro Pérez Santillán"
+  },
+  "navigation": {
+    "introduction": "Introduction",
+    "skills": "Skills",
+    "projects": "Projects & Experience",
+    "education": "Education",
+    "articles": "Blog/Articles",
+    "testimonials": "Testimonials"
+  },
   "introduction": {
     "title": "Hi! I'm Alejandro",
     "subtitle": "Software Developer & Aspiring Data Scientist",
     "introHighlight": "🚀 Full Stack Developer with hands-on experience in ASP.NET, Java, and modern web technologies, currently interning at Daikin, where I collaborate in an agile team developing innovative IT solutions.",
     "techStackTitle": "💻 Tech Stack:",
-    "webDevTitle": "Web Development",
+    "webDevTitle": "Web Development:",
     "webDevStack": "ASP.NET, Bootstrap, HTML, CSS, JavaScript",
-    "desktopDevTitle": "Desktop Development",
+    "desktopDevTitle": "Desktop Development:",
     "desktopDevStack": "Java, C, C++",
-    "databasesTitle": "Databases",
+    "databasesTitle": "Databases:",
     "databasesStack": "SQL Server",
-    "versionControlTitle": "Version Control",
+    "versionControlTitle": "Version Control:",
     "versionControlStack": "Git",
-    "methodologiesTitle": "Methodologies",
+    "methodologiesTitle": "Methodologies:",
     "methodologiesStack": "Agile",
     "professionalSummary": "💡 I stand out for my passion for continuous learning and adaptability to new technologies. With strong proficiency in Java and C#, I'm building my path towards data science while strengthening my software development skills.",
     "credentials": "🎓 Credentials:",
@@ -24,5 +36,186 @@
     "journeyText1": "My interest in technology began in 2018, leading me to study Information Technology Engineering at UTAN campus industrias. What I'm passionate about in development is the creative process of building customized solutions for each project to solve.",
     "journeyText2": "My experience developing desktop applications strengthened my interest in creating solutions that directly impact the user experience. This path has led me to become interested in data science, where I see the potential to combine traditional development with data analysis to create more comprehensive solutions.",
     "journeyText3": "I stay current by following industry leaders and developing personal projects. My methodical and proactive approach, along with my passion for continuous optimization, defines my work style."
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "addButton": "Add Testimonial",
+    "viewButton": "View Testimonials",
+    "form": {
+      "emailLabel": "Email:",
+      "nameLabel": "Name/Alias:",
+      "companyLabel": "Company:",
+      "ratingLabel": "Rating:",
+      "descriptionLabel": "Description:",
+      "submitButton": "Submit Testimonial"
+    },
+    "successMessage": "Testimonial submitted successfully!"
+  },
+  "skills": {
+    "title": "Skills",
+    "hardSkills": "Hard Skills",
+    "softSkills": "Soft Skills",
+    "programming": {
+      "title": "Programming Languages",
+      "intermediate": "🔵 Intermediate Level",
+      "basic": "🔵 Basic Level"
+    },
+    "development": {
+      "title": "Development & Frameworks"
+    },
+    "databases": {
+      "title": "Databases"
+    },
+    "tools": {
+      "title": "Tools & Technologies"
+    },
+    "languages": {
+      "title": "Languages"
+    },
+    "management": {
+      "title": "Management & Organization"
+    },
+    "interpersonal": {
+      "title": "Interpersonal Skills"
+    }
+  },
+  "projects": {
+    "title": "Projects & Experience",
+    "personal": "Personal Projects",
+    "professional": "Professional Work",
+    "devPortfolio": {
+      "title": "DevPortfolio",
+      "description": "Web portfolio with space design and glassmorphism",
+      "mainFeatures": "Main features:",
+      "features": [
+        "Space design with star and shooting star animations",
+        "Modern glassmorphism effects interface",
+        "Dynamic navigation system",
+        "Interactive project carousel",
+        "Social media links with hover effects",
+        "Fully responsive design",
+        "Smooth animations and transitions"
+      ],
+      "technologies": "Technologies: ASP.NET MVC, C#, JavaScript, HTML5, CSS3, jQuery",
+      "challenges": "Challenges overcome:",
+      "challengesList": [
+        "Implementation of complex animations for space background",
+        "Development of custom carousel with adjacent project preview",
+        "Integration of glassmorphism effects while maintaining performance",
+        "State management and transitions in section navigation"
+      ]
+    },
+    "daikin": {
+      "title": "Daikin Manufacturing Mexico",
+      "description": "MVC Support and Development",
+      "mainResponsibilities": "Main responsibilities:",
+      "responsibilities": [
+        "Maintenance and improvement of existing applications",
+        "Development of new features",
+        "SQL query optimization",
+        "User interface improvements",
+        "Team collaboration using agile methodologies"
+      ],
+      "technologies": "Technologies: ASP.NET MVC, C#, SQL Server, JavaScript, Bootstrap"
+    },
+    "bookshelf": {
+      "title": "BookShelf - Digital Personal Library",
+      "description": "Personal library management system",
+      "mainFeatures": "Main features:",
+      "features": [
+        "Complete management of books, authors, and genres",
+        "Intuitive interface with expandable panels",
+        "Dynamic form system",
+        "Asynchronous data loading using AJAX",
+        "Advanced classification and search",
+        "Custom tagging system"
+      ],
+      "technologies": "Technologies: ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript"
+    },
+    "prosalud": {
+      "title": "ProSalud - Comprehensive Medical Management System",
+      "description": "Complete platform for medical office management",
+      "mainFeatures": "Main features:",
+      "features": [
+        "Patient and medical records management",
+        "Appointment system and medical schedule",
+        "Staff and specialties control",
+        "Billing system and VIP program",
+        "ICD-10 based diagnostics",
+        "Treatment tracking"
+      ],
+      "technologies": "Technologies: ASP.NET MVC, C#, SQL Server, Entity Framework, Bootstrap, jQuery, HTML5, CSS3, JavaScript, Dapper"
+    }
+  },
+  "education": {
+    "title": "Education",
+    "academic": "Academic Background",
+    "engineeringTitle": "Information Technology Engineering | 2024",
+    "institution": "UTAN Campus Industrias",
+    "details": [
+      "Currently in 8th quarter",
+      "Focus on software development and corporate solutions"
+    ],
+    "certifications": "Certifications",
+    "linguaskill": "Linguaskill B1 | English Proficiency",
+    "microsoft": {
+      "title": "Microsoft Office Specialist (MOS) | 2019",
+      "programs": [ "Word", "PowerPoint", "Excel" ]
+    },
+    "development": "Continuous Professional Development",
+    "conferences": "Conferences and Events",
+    "automotive": {
+      "title": "Participant in Automotive Cluster | Tangamanga University",
+      "topics": [
+        "Focus on automotive sector technological trends",
+        "IT and HR industry perspectives"
+      ]
+    },
+    "learning": "Continuous Learning",
+    "platforms": "Active platforms:"
+  },
+  "articles": {
+    "title": "Blog & Articles",
+    "technical": "Technical Publications",
+    "articles": {
+      "clean": {
+        "title": "Implementing Clean Architecture in ASP.NET Core",
+        "description": "Detailed tutorial on design patterns and best practices"
+      },
+      "sql": {
+        "title": "SQL Server Query Optimization",
+        "description": "Practical guide for database performance improvement"
+      }
+    },
+    "repos": {
+      "title": "Featured Repositories",
+      "mvc": {
+        "title": "Tutorial-MVC-CSharp",
+        "description": "Step-by-step guide for ASP.NET MVC beginners",
+        "stats": "200+ stars on GitHub"
+      },
+      "patterns": {
+        "title": "Java-Design-Patterns",
+        "description": "Practical examples of design patterns in Java",
+        "highlight": "Active community contributions"
+      }
+    },
+    "community": {
+      "title": "Community Contributions",
+      "stackoverflow": {
+        "title": "Stack Overflow",
+        "contributions": [
+          "15+ answers in C# and Java topics",
+          "Specialized in MVC problem-solving"
+        ]
+      }
+    }
+  },
+  "social": {
+    "contact": "Contact Me"
+  },
+  "languages": {
+    "english": "English",
+    "spanish": "Spanish"
   }
 }

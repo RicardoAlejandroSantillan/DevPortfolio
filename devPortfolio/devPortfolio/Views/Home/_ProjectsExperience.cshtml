@@ -1,90 +1,94 @@
 ﻿<div class="projects-content">
-    <h2 class="section-title">Projects & Experience</h2>
+    <h2 class="section-title" data-section="projects" data-value="title">Projects & Experience</h2>
 
     <div class="projects-filter">
-        <button class="filter-button active" data-filter="personal">Personal Projects</button>
-        <button class="filter-button" data-filter="professional">Professional Work</button>
+        <button class="filter-button active" data-section="projects" onclick="toggleVisibility('personal')" data-value="personal">Personal Projects</button>
+        <button class="filter-button" data-section="projects" onclick="toggleVisibility('professional')" data-value="professional">Professional Work</button>
     </div>
 
     <div class="slider--projects">
         <div class="slider--projects__container">
-            <ul id="projects-list" class="projects-list cf">
+            <input type="radio" name="project" id="project-1" checked>
+            <input type="radio" name="project" id="project-2">
+            <input type="radio" name="project" id="project-3">
+            <input type="radio" name="project" id="project-4">
+
+            <ul class="projects-list">
                 <li>
-                    <figure class="project-card active" data-type="personal">
+                    <figure class="project-card" id="card-devPortfolio" data-type="personal">
                         <div class="project-image-container">
                             <img src="~/images/projects/devportfolio/cover.webp" alt="DevPortfolio" class="project-image" />
                         </div>
                         <figcaption class="project-info">
-                            <h2>DevPortfolio</h2>
-                            <p>Web portfolio with space design and glassmorphism</p>
+                            <h2 data-section="projects" data-value="devPortfolio.title">DevPortfolio</h2>
+                            <p data-section="projects" data-value="devPortfolio.description">Web portfolio with space design and glassmorphism</p>
                             <div class="project-date">October 2024 - Present</div>
                         </figcaption>
                     </figure>
                 </li>
 
                 <li>
-                    <figure class="project-card" data-type="professional">
+                    <figure class="project-card" id="card-daikin" data-type="professional">
                         <div class="project-image-container">
                             <img src="~/images/projects/daikin/cover.webp" alt="Daikin" class="project-image" />
                         </div>
                         <figcaption class="project-info">
-                            <h2>Daikin Manufacturing Mexico</h2>
-                            <p>MVC Support and Development</p>
+                            <h2 data-section="projects" data-value="daikin.title">Daikin Manufacturing Mexico</h2>
+                            <p data-section="projects" data-value="daikin.description">MVC Support and Development</p>
                             <div class="project-date">September 2024 - Present</div>
                         </figcaption>
                     </figure>
                 </li>
 
                 <li>
-                    <figure class="project-card" data-type="personal">
+                    <figure class="project-card" id="card-bookshelf" data-type="personal">
                         <div class="project-image-container">
                             <img src="~/images/projects/bookshelf/cover.webp" alt="BookShelf" class="project-image" />
                         </div>
                         <figcaption class="project-info">
-                            <h2>BookShelf</h2>
-                            <p>Personal library management system</p>
+                            <h2 data-section="projects" data-value="bookshelf.title">BookShelf</h2>
+                            <p data-section="projects" data-value="bookshelf.description">Personal library management system</p>
                             <div class="project-date">September 2024 - Present</div>
                         </figcaption>
                     </figure>
                 </li>
 
                 <li>
-                    <figure class="project-card" data-type="personal">
+                    <figure class="project-card" id="card-prosalud" data-type="personal">
                         <div class="project-image-container">
                             <img src="~/images/projects/prosalud/cover.webp" alt="ProSalud" class="project-image" />
                         </div>
                         <figcaption class="project-info">
-                            <h2>ProSalud</h2>
-                            <p>Comprehensive Medical Management System</p>
+                            <h2 data-section="projects" data-value="prosalud.title">ProSalud</h2>
+                            <p data-section="projects" data-value="prosalud.description">Comprehensive Medical Management System</p>
                             <div class="project-date">October 2024 - Present</div>
                         </figcaption>
                     </figure>
                 </li>
             </ul>
         </div>
-
         <div class="project-details active" id="project-1">
-            <h3>DevPortfolio</h3>
-            <p>Personal web portfolio developed with a unique design that combines a space theme with glassmorphism effects, showcasing skills, projects, and professional experience in an interactive and visually appealing way.</p>
-            <p>Main features:</p>
+            <h3 data-section="projects" data-value="devPortfolio.title">DevPortfolio</h3>
+            <p data-section="projects" data-value="devPortfolio.description">Personal web portfolio developed with a unique design that combines a space theme with glassmorphism effects, showcasing skills, projects, and professional experience in an interactive and visually appealing way.</p>
+            <p data-section="projects" data-value="devPortfolio.mainFeatures">Main features:</p>
             <ul>
-                <li>Space design with star and shooting star animations</li>
-                <li>Modern glassmorphism effects interface</li>
-                <li>Dynamic navigation system with partial views</li>
-                <li>Interactive project carousel</li>
-                <li>Social media links with hover effects</li>
-                <li>Fully responsive design</li>
-                <li>Smooth animations and transitions</li>
+                <li data-section="projects" data-value="devPortfolio.features.0">Space design with star and shooting star animations</li>
+                <li data-section="projects" data-value="devPortfolio.features.1">Modern glassmorphism effects interface</li>
+                <li data-section="projects" data-value="devPortfolio.features.2">Dynamic navigation system with partial views</li>
+                <li data-section="projects" data-value="devPortfolio.features.3">Interactive project carousel</li>
+                <li data-section="projects" data-value="devPortfolio.features.4">Social media links with hover effects</li>
+                <li data-section="projects" data-value="devPortfolio.features.5">Fully responsive design</li>
+                <li data-section="projects" data-value="devPortfolio.features.6">Smooth animations and transitions</li>
             </ul>
             <div class="technologies">
-                <p>Technologies: ASP.NET MVC, C#, JavaScript, HTML5, CSS3, jQuery</p>
+                <p data-section="projects" data-value="devPortfolio.technologies">Technologies: ASP.NET MVC, C#, JavaScript, HTML5, CSS3, jQuery</p>
             </div>
-            <p>Challenges overcome:</p>
+            <p data-section="projects" data-value="devPortfolio.challenges">Challenges overcome:</p>
             <ul>
-                <li>Implementation of complex animations for space background</li>
-                <li>Development of custom carousel with adjacent project preview</li>
-                <li>Integration of glassmorphism effects while maintaining performance</li>
-                <li>State management and transitions in section navigation</li>
+                <li data-section="projects" data-value="devPortfolio.challengesList.0">Implementation of complex animations for space background</li>
+                <li data-section="projects" data-value="devPortfolio.challengesList.1">Development of custom carousel with adjacent project preview</li>
+                <li data-section="projects" data-value="devPortfolio.challengesList.2">Integration of glassmorphism effects while maintaining performance</li>
+                <li data-section="projects" data-value="devPortfolio.challengesList.3">State management and transitions in section navigation</li>
             </ul>
             <div class="project-details-images">
                 <img src="~/images/projects/devportfolio/cover.webp" alt="Main View" class="detail-image" />
@@ -93,18 +97,18 @@
         </div>
 
         <div class="project-details" id="project-2">
-            <h3>Daikin Manufacturing Mexico</h3>
-            <p>Professional experience providing support and development for an application using MVC model and SQL Server. Development and maintenance of APIs and databases for internal systems.</p>
-            <p>Main responsibilities:</p>
+            <h3 data-section="projects" data-value="daikin.title">Daikin Manufacturing Mexico</h3>
+            <p data-section="projects" data-value="daikin.description">Professional experience providing support and development for an application using MVC model and SQL Server. Development and maintenance of APIs and databases for internal systems.</p>
+            <p data-section="projects" data-value="daikin.mainResponsibilities">Main responsibilities:</p>
             <ul>
-                <li>Maintenance and improvement of existing applications</li>
-                <li>Development of new features according to requirements</li>
-                <li>SQL query and stored procedure optimization</li>
-                <li>Implementation of user interface improvements</li>
-                <li>Team collaboration using agile methodologies</li>
+                <li data-section="projects" data-value="daikin.responsibilities.0">Maintenance and improvement of existing applications</li>
+                <li data-section="projects" data-value="daikin.responsibilities.1">Development of new features according to requirements</li>
+                <li data-section="projects" data-value="daikin.responsibilities.2">SQL query and stored procedure optimization</li>
+                <li data-section="projects" data-value="daikin.responsibilities.3">Implementation of user interface improvements</li>
+                <li data-section="projects" data-value="daikin.responsibilities.4">Team collaboration using agile methodologies</li>
             </ul>
             <div class="technologies">
-                <p>Technologies: ASP.NET MVC, C#, SQL Server, JavaScript, Bootstrap</p>
+                <p data-section="projects" data-value="daikin.technologies">Technologies: ASP.NET MVC, C#, SQL Server, JavaScript, Bootstrap</p>
             </div>
             <div class="project-details-images">
                 <img src="~/images/projects/daikin/overimerequest page.webp" alt="Enterprise Application" class="detail-image" />
@@ -113,19 +117,19 @@
         </div>
 
         <div class="project-details" id="project-3">
-            <h3>BookShelf - Digital Personal Library</h3>
-            <p>Personal library management system that allows organizing and cataloging books, authors, and literary genres. A complete solution for maintaining an organized record of literary collections.</p>
-            <p>Main features:</p>
+            <h3 data-section="projects" data-value="bookshelf.title">BookShelf - Digital Personal Library</h3>
+            <p data-section="projects" data-value="bookshelf.description">Personal library management system that allows organizing and cataloging books, authors, and literary genres. A complete solution for maintaining an organized record of literary collections.</p>
+            <p data-section="projects" data-value="bookshelf.mainFeatures">Main features:</p>
             <ul>
-                <li>Complete management of books, authors, and genres</li>
-                <li>Intuitive interface with expandable panels</li>
-                <li>Dynamic form system</li>
-                <li>Asynchronous data loading using AJAX</li>
-                <li>Advanced classification and search</li>
-                <li>Custom tagging system</li>
+                <li data-section="projects" data-value="bookshelf.features.0">Complete management of books, authors, and genres</li>
+                <li data-section="projects" data-value="bookshelf.features.1">Intuitive interface with expandable panels</li>
+                <li data-section="projects" data-value="bookshelf.features.2">Dynamic form system</li>
+                <li data-section="projects" data-value="bookshelf.features.3">Asynchronous data loading using AJAX</li>
+                <li data-section="projects" data-value="bookshelf.features.4">Advanced classification and search</li>
+                <li data-section="projects" data-value="bookshelf.features.5">Custom tagging system</li>
             </ul>
             <div class="technologies">
-                <p>Technologies: ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript</p>
+                <p data-section="projects" data-value="bookshelf.technologies">Technologies: ASP.NET MVC, C#, SQL Server, Dapper, jQuery, Bootstrap, HTML5, CSS3, JavaScript</p>
             </div>
             <div class="project-details-images">
                 <img src="~/images/projects/bookshelf/page.webp" alt="Book Management" class="detail-image" />
@@ -134,19 +138,19 @@
         </div>
 
         <div class="project-details" id="project-4">
-            <h3>ProSalud - Comprehensive Medical Management System</h3>
-            <p>Complete platform for medical office management that automates administrative and clinical processes, from appointment scheduling to medical records and billing management.</p>
-            <p>Main features:</p>
+            <h3 data-section="projects" data-value="prosalud.title">ProSalud - Comprehensive Medical Management System</h3>
+            <p data-section="projects" data-value="prosalud.description">Complete platform for medical office management that automates administrative and clinical processes, from appointment scheduling to medical records and billing management.</p>
+            <p data-section="projects" data-value="prosalud.mainFeatures">Main features:</p>
             <ul>
-                <li>Patient and medical records management</li>
-                <li>Appointment system and medical schedule</li>
-                <li>Staff and specialties control</li>
-                <li>Billing system and VIP program</li>
-                <li>ICD-10 based diagnostics</li>
-                <li>Treatment tracking</li>
+                <li data-section="projects" data-value="prosalud.features.0">Patient and medical records management</li>
+                <li data-section="projects" data-value="prosalud.features.1">Appointment system and medical schedule</li>
+                <li data-section="projects" data-value="prosalud.features.2">Staff and specialties control</li>
+                <li data-section="projects" data-value="prosalud.features.3">Billing system and VIP program</li>
+                <li data-section="projects" data-value="prosalud.features.4">ICD-10 based diagnostics</li>
+                <li data-section="projects" data-value="prosalud.features.5">Treatment tracking</li>
             </ul>
             <div class="technologies">
-                <p>Technologies: ASP.NET MVC, C#, SQL Server, Entity Framework, Bootstrap, jQuery, HTML5, CSS3, JavaScript, Dapper</p>
+                <p data-section="projects" data-value="prosalud.technologies">Technologies: ASP.NET MVC, C#, SQL Server, Entity Framework, Bootstrap, jQuery, HTML5, CSS3, JavaScript, Dapper</p>
             </div>
             <div class="project-details-images">
                 <img src="~/images/projects/prosalud/page.webp" alt="Appointment System" class="detail-image" />
